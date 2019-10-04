@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="search-bar ">
+
+        <div class="place">
+            <label>
+                <div class="lbl">
+                    Место или название отеля
+                </div>
+
+                <input type="text" name="place" id="place" placeholder="Введите здесь место" style="background-image: url(./img/map.png);
+                            background-position: left;
+                            background-repeat: no-repeat;                            
+                            padding-left: 20px;" />
+
+            </label>
+        </div>
+
+        <div class="dates">
+            <label>
+                <div class="lbl">
+                    Заезд
+                </div>
+
+                <div class="date-in">
+                    <div class="calendar">
+                        <img src="./img/calendar.png" alt="">
+                    </div>
+                    <input name="date-in" id="date-in" />
+                </div>
+
+            </label>
+
+
+            <label>
+                <div class="lbl">
+                    Выезд
+                </div>
+
+                <div class="date-out">
+                    <input name="date-out" id="date-out"  placeholder="Дата выезда" />
+                    <div class="right-arrow">
+                        <img src="./img/arrow_down.png" alt="">
+                    </div>
+                </div>
+
+            </label>
+        </div>
+
+        <div class="guests">
+
+            <label>
+                <div class="lbl">
+                    Номера
+                </div>
+                <div class="counter">
+                    <input type="number" name="rooms" id="rooms" value="1">
+                    <div class="number_controls">
+                        <img class="nc-plus" src="./img/arrow_up_solid.png" alt="">
+                        <img class="nc-minus" src="./img/arrow_down_solid.png" alt="">
+                    </div>
+                </div>
+            </label>
+
+            <label>
+                <div class="lbl">
+                    Взролые
+                </div>
+                <div class="counter">
+                    <input type="number" name="persons" id="persons" value="1">
+                    <div class="number_controls">
+                        <img class="nc-plus" src="./img/arrow_up_solid.png" alt="">
+                        <img class="nc-minus" src="./img/arrow_down_solid.png" alt="">
+                    </div>
+                </div>
+
+            </label>
+
+            <label>
+                <div class="lbl">
+                    Дети
+                </div>
+                <div class="counter">
+                    <input type="number" name="children" id="children" value="0">
+                    <div class="number_controls">
+                        <img class="nc-plus" src="./img/arrow_up_solid.png" alt="">
+                        <img class="nc-minus" src="./img/arrow_down_solid.png" alt="">
+                    </div>
+                </div>
+            </label>
+
+            <button class="add-btn" id="add-btn"></button>
+        </div>
+
+        <div class="search">
+            <button class="search-btn" id="search-btn">Найти</button>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
